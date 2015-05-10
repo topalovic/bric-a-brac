@@ -15,12 +15,12 @@ $ wget http://norvig.com/big.txt
 Then take it for a spin in IRB or Pry:
 
 ```ruby
-> require "./corrector"
-> correct "werd"
+require "./corrector"
+correct "werd"
 # => ["were", "word", "herd", "ward", "weed", "weird", "weld", "wert", "wead", "wed"]
-> correct "diktionary"
+correct "diktionary"
 # => ["dictionary", "wiktionary"]
-> correct "nosuchword"
+correct "nosuchword"
 # => ["nosuchword"]
 ```
 

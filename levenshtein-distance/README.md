@@ -2,15 +2,17 @@ Levenshtein distance
 ====================
 
 Levenshtein distance,
-[iterative implementation](http://en.wikipedia.org/wiki/Levenshtein_distance#Iterative_with_two_matrix_rows).
+[iterative implementation with two matrix rows](http://en.wikipedia.org/wiki/Levenshtein_distance#Iterative_with_two_matrix_rows).
 
 ## Usage
 
 ```ruby
-> require "./levenshtein"
-> Levenshtein.distance "Saturday", "Sunday"
+require "./levenshtein"
+
+Levenshtein.distance "Saturday", "Sunday"
 # => 3
-> Levenshtein.distance "Saturday", "Sunday", debug: true
+
+Levenshtein.distance "Saturday", "Sunday", debug: true
 #     S a t u r d a y
 #   0 1 2 3 4 5 6 7 8
 # S 1 0 1 2 3 4 5 6 7
